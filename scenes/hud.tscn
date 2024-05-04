@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://fgo84w8xb34u"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="UIScoreLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -89.0
+offset_top = 26.0
+offset_right = -28.0
+offset_bottom = 49.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 30
+text = "Coins: 0"

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmdtl8r7x51kj"]
+
+[ext_resource type="Script" path="res://scripts/fakeblock.gd" id="1_61wwn"]
+[ext_resource type="Texture2D" uid="uid://cs366jlsqfv63" path="res://assets/sprites/world_tileset.png" id="1_rc775"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2rgih"]
+size = Vector2(18, 32)
+
+[node name="Area2D" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_61wwn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rc775")
+region_enabled = true
+region_rect = Rect2(64, 0, 16, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2rgih")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
