@@ -9,5 +9,4 @@ func add_point():
 	score += 1
 	score_label.text = "You collected " + str(score) + " coins."
 	hud.get_node("UIScoreLabel").text = "Coins: " + str(score)
-	print(score)
 

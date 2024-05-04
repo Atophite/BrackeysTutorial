@@ -750,6 +750,12 @@ position = Vector2(339, -62)
 [node name="Coin5" parent="Coins" instance=ExtResource("5_6o2qh")]
 position = Vector2(143, -15)
 
+[node name="Coin6" parent="Coins" instance=ExtResource("5_6o2qh")]
+position = Vector2(39, -106)
+
+[node name="Coin7" parent="Coins" instance=ExtResource("5_6o2qh")]
+position = Vector2(15, -106)
+
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Platform" parent="Platforms" instance=ExtResource("4_yj88r")]
@@ -811,7 +817,7 @@ offset_right = 506.0
 offset_bottom = -35.0
 theme_override_fonts/font = ExtResource("9_3ubrr")
 theme_override_font_sizes/font_size = 8
-text = "Not this way"
+text = "Jump!"
 
 [node name="ScoreLabel" type="Label" parent="Labels"]
 unique_name_in_owner = true
