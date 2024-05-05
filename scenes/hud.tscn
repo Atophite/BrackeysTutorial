@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://fgo84w8xb34u"]
+[gd_scene load_steps=2 format=3 uid="uid://fgo84w8xb34u"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_u4k0e"]
 
 [node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_u4k0e")
 
 [node name="UIScoreLabel" type="Label" parent="."]
 anchors_preset = 1
@@ -17,3 +20,23 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 2
 theme_override_font_sizes/font_size = 30
 text = "Coins: 0"
+metadata/_edit_use_anchors_ = true
+
+[node name="UITimerLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -140.0
+offset_top = 77.0
+offset_right = -28.0
+offset_bottom = 119.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 30
+text = "Coins: 0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="."]

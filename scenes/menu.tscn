@@ -29,10 +29,11 @@ script = ExtResource("2_s6bgi")
 
 [node name="Label" type="Label" parent="TextureButton"]
 layout_mode = 0
-offset_left = 41.5
-offset_top = 134.0
-offset_right = 84.5
-offset_bottom = 164.0
-text = "Start"
+offset_left = -27.5
+offset_top = 137.0
+offset_right = 157.5
+offset_bottom = 179.0
+theme_override_font_sizes/font_size = 30
+text = "START GAME"
 
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
