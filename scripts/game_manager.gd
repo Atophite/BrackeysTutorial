@@ -4,7 +4,7 @@ extends Node
 @onready var time_label = %TimeLabel
 
 var score = 0
-var fast_time = 0
+var fast_time = 10_000_000_000
 var current_time = 0
 
 func add_point():
